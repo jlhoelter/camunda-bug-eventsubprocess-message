@@ -42,7 +42,7 @@
     </bpmn:subProcess>
     <bpmn:sequenceFlow id="SequenceFlow_1i2ogxz" sourceRef="task1" targetRef="sendStartMessageToSubprocess" />
     <bpmn:sequenceFlow id="SequenceFlow_1qapm4v" sourceRef="sendStartMessageToSubprocess" targetRef="messageToSubprocess" />
-    <bpmn:intermediateThrowEvent id="sendStartMessageToSubprocess" camunda:asyncBefore="true">
+    <bpmn:intermediateThrowEvent id="sendStartMessageToSubprocess" name="Start Subproces" camunda:asyncBefore="true">
       <bpmn:incoming>SequenceFlow_1i2ogxz</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_1qapm4v</bpmn:outgoing>
       <bpmn:messageEventDefinition camunda:class="org.camunda.bpm.unittest.SendMessageToSubprocessDelegate" />
