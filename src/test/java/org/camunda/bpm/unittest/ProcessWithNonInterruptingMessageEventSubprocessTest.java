@@ -17,7 +17,7 @@ import org.junit.Test;
 
 
 
-public class TestProzessMitEventSubprozess {
+public class ProcessWithNonInterruptingMessageEventSubprocessTest {
 
 	@Rule
 	public ProcessEngineRule rule = new ProcessEngineRule();
